@@ -181,7 +181,7 @@ GitHub: Neurogram-R
 */
 
 const accounts = [
-    ["Ted", "https://www.clashcloud.net/auth/login", "2550499507@qq.com", "ml123456"],
+    ["ssrcloud", "https://www.clashcloud.net/auth/login", "2550499507@qq.com", "ml123456"],
     ["GGboom", "https://ggboom.site/auth/login", "账号", "密码"],
     
 ]
