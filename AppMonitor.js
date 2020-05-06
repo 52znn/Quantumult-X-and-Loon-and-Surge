@@ -1,5 +1,5 @@
 /*
-    本作品用于QuantumultX和Surge之间js执行方法的转换
+    本作品用于QuantumultX和Surge之间js执行方法的转换。
     您只需书写其中任一软件的js,然后在您的js最【前面】追加上此段js即可
     无需担心影响执行问题,具体原理是将QX和Surge的方法转换为互相可调用的方法
     尚未测试是否支持import的方式进行使用,因此暂未export
