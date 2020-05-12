@@ -32,36 +32,12 @@ var obj = JSON.parse(response.body);
 if (obj.code == "0") {
     console.log(response.statusCode + "\n\n" + response.body);
       $notify("QQ黄钻", "签到结果:成功",obj.message);
+    } 
+if (obj.message == "请登录") {
+    console.log(response.statusCode + "\n\n" + response.body);
+      $notify("QQ黄钻", "请重新获取Cookie!",+ "⚠️");
     } else if (obj.code == "-10000") {
       console.log("failure response: \n" + response.body);
       $notify("QQ黄钻","签到结果:成功（重复签到）",obj.message);
 }
 });
-
-/*
-[JS Console]: 200
-
-{
-	"code":-10000,
-	"subcode":-10135,
-	"message":"每天只需要签到一次哦！",
-	"notice":0,
-	"time":1589249662,
-	"tips":"99AF-268"
-}
-
-*/
-
-/*
-$task.fetch(bonus).then(response => {
-  var obj = JSON.parse(response.body);
-  if (obj.code == "-10000") {
-    console.log(response.statusCode + "\n\n" + response.body);
-      $notify("黄钻签到", "");
-    } else {
-      console.log("failure response: \n" + response.body);
-      $notify("黄钻签到" + obj.message + "⚠️");
-}
-});
-
-*/
