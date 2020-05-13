@@ -31,7 +31,7 @@ $task.fetch(myRequest).then(response => {
 var obj = JSON.parse(response.body);
 if (obj.code == "0") {
     console.log(response.statusCode + "\n\n" + response.body);
-      $notify("QQ黄钻", "签到结果:成功",obj.message);
+      $notify("QQ黄钻", "签到结果:成功", "");
     } 
 if (obj.message == "请登录") {
     console.log(response.statusCode + "\n\n" + response.body);
