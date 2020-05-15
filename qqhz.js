@@ -35,7 +35,7 @@ if (obj.code == "0") {
     } 
 if (obj.message == "请登录") {
     console.log(response.statusCode + "\n\n" + response.body);
-      $notify("QQ黄钻", "请重新获取Cookie!",+ "⚠️");
+      $notify("QQ黄钻", "签到结果:失败（请重新获取Cookie）", "");
     } else if (obj.code == "-10000") {
       console.log("failure response: \n" + response.body);
       $notify("QQ黄钻","签到结果:成功（重复签到）",obj.message);
